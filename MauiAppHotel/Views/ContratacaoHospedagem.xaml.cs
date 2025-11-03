@@ -1,3 +1,5 @@
+using MauiAppHotel.Views;
+
 namespace MauiAppHotel.Views
 {
     public partial class ContratacaoHospedagem : ContentPage
@@ -6,5 +8,11 @@ namespace MauiAppHotel.Views
         {
             InitializeComponent();
         }
+
+        private async void AbrirSobre_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Sobre());
+        }
     }
 }
+
